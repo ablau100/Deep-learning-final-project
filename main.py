@@ -1,4 +1,4 @@
-from SVHN_Model import SVHN_Model as Model
+from SVHN_Model_final import SVHN_Model as Model
 import pandas as pd
 import numpy as np
 
@@ -8,7 +8,7 @@ if __name__== "__main__":
    df = pd.DataFrame(accuracy)
    df.to_csv('Data/base_accuracy.csv')
 
-    for thresh in [.85,.9,.95]:
+    for thresh in [97,98,99]:
         
         for noise in ['Rand','Traditional','']:
             accuracy = []
